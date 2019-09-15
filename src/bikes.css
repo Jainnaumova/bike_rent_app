@@ -1,0 +1,240 @@
+h3, p {
+  margin: 0;
+}
+
+h3 {
+  margin-bottom: 1rem;
+}
+
+img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.bikes-group::-webkit-scrollbar {
+  display: none;
+}
+
+.bikes-group {
+  overflow: -moz-scrollbars-none;
+}
+
+.bikes-group {
+  -ms-overflow-style: none;
+}
+
+.bikes-container {
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.bikes-group {
+  height: 80vh;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bike-wrapper {
+  padding: 30px;
+  width: 250px;
+}
+
+.bike-cart {
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.bike-cart:hover {
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: 0.1s;
+  box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.14), 0 3px 7px 0 rgba(0, 0, 0, 0.12), 0 5px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.bike-description {
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+.bike-description > h3 {
+  margin-top: 1rem;
+}
+
+p:nth-child(2) {
+  margin-bottom: 2rem;
+}
+
+p:nth-child(2)::after {
+  position: absolute;
+  content: '';
+  min-width: 100%;
+  top: 18rem;
+  left: 0;
+  border-bottom: 3px solid #e81515;
+}
+
+.rent-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  color: #fff;
+  background-color: #222d68;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+}
+
+.rent-button:hover {
+  background-color: #1b2452;
+}
+
+.confirmation-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.form-container {
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.05), 5px 6px 8px 1px rgba(0, 0, 0, 0.12), 0 2px 11px -2px rgba(0, 0, 0, 0.2);
+}
+
+.summary-container {
+  position: relative;
+  padding: 50px;
+  margin: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px 0 rgba(0, 0, 0, 0.05), 5px 6px 8px 1px rgba(0, 0, 0, 0.12), 0 2px 11px -2px rgba(0, 0, 0, 0.2);
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-form {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-height: 38px;
+  margin-bottom: 1rem;
+  width: 100%;
+  color: #495057;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  outline: none;
+}
+
+.button-submit {
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: inherit;
+  color: #fff;
+  line-height: 1.5;
+  background-color: #e81515;
+  border-color: #e81515;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #c51616fa;
+}
+
+.summary-description {
+  font-size: 0.8rem;
+  padding: 8px;
+  border: 1px solid rgba(221, 221, 221, 0.85);
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.summary-description > div {
+  margin-bottom: 1.2rem;
+}
+
+.summary-description:nth-child(2)::before {
+  position: absolute;
+  content: '';
+  min-width: 8.8rem;
+  top: 7rem;
+  left: 2.7rem;
+  border-bottom: 1px solid #ced4da;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  color: #b12704;
+}
+
+.error-message {
+  font-size: 0.6rem;
+  font-weight: lighter;
+  color: #e81515;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 60px;
+  color: #fff;
+  background-color: #222d68;
+  border: 1px solid rgba(221, 221, 221, 0.85);
+  border-radius: 0.25rem;
+}
+
+@media screen and (min-width: 1171px) {
+  .bikes-group {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 500px) {
+  .popup {
+    position: absolute;
+    top: 15rem;
+    left: 3rem;
+  }
+}
